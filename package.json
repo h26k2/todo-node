@@ -1,0 +1,31 @@
+{
+  "name": "todo-node",
+  "version": "1.0.0",
+  "description": "A simple todo application to practise node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h26k2/todo-node.git"
+  },
+  "keywords": [
+    "todo",
+    "app",
+    "node",
+    "todo-app-node"
+  ],
+  "author": "h26k2",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/h26k2/todo-node/issues"
+  },
+  "homepage": "https://github.com/h26k2/todo-node#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.15"
+  }
+}

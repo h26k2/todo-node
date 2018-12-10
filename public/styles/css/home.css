@@ -1,0 +1,32 @@
+.f-100, form input.form-control-lg, form button.btn-lg {
+  font-weight: 100; }
+
+.t-cap, div.jumbotron h2, .container h4::first-letter, form button.btn-lg, ul.list-group li.list-group-item span::first-letter {
+  text-transform: capitalize; }
+
+div.jumbotron {
+  background-color: #007bff; }
+  div.jumbotron h2 {
+    text-align: center;
+    color: #fff; }
+
+.container.card {
+  margin-top: 0.5em !important;
+  margin-bottom: 1.5em !important; }
+
+form {
+  width: 100%; }
+
+ul.list-group li.list-group-item span {
+  animation: fadeIn 110ms ease 0s 1;
+  -webkit-animation: fadeIn 110ms ease 0s 1;
+  -o-animation: fadeIn 110ms ease 0s 1;
+  -moz-animation: fadeIn 110ms ease 0s 1; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/*# sourceMappingURL=home.css.map */

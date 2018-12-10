@@ -1,0 +1,77 @@
+
+$blue : #007bff;
+$white : #fff;
+$gray : #ced4da;
+
+.f-100{
+    font-weight: 100;
+}
+
+.t-cap{
+    text-transform: capitalize;
+}
+
+@mixin fadeIn($name,$duration,$type,$delay,$count) {
+
+    animation:$name $duration $type $delay $count;
+    -webkit-animation: $name $duration $type $delay $count;
+    -o-animation: $name $duration $type $delay $count;
+    -moz-animation: $name $duration $type $delay $count;
+
+}
+
+
+div.jumbotron{
+    background-color: $blue;
+    h2{
+        @extend .t-cap;
+        text-align: center;
+        color:$white;
+    }
+}
+
+.container{
+    h4{
+        &::first-letter{
+            @extend .t-cap;
+        }
+    }
+}
+
+.container.card{
+    margin-top:0.5em!important;
+    margin-bottom:1.5em!important;
+}
+
+
+form{
+    width:100%;
+    input.form-control-lg {
+        @extend .f-100;
+    }
+
+    button.btn-lg{
+        @extend .f-100;
+        @extend .t-cap;
+    }
+}
+
+ul.list-group{
+    li.list-group-item{
+        span{
+            @include fadeIn(fadeIn,110ms,ease,0s,1);            
+            &::first-letter{
+                @extend .t-cap;
+            }
+        }
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
